@@ -1,16 +1,16 @@
-package jatek;
+package cui;
 
 import java.util.Random;
 import java.util.Scanner;
 
 public class KoPapirOllo {
+
     public static void main(String[] args) {
         Random rnd = new Random();
         Scanner sc = new Scanner(System.in);
 
-
-       int gepValSzam = rnd.nextInt(3) + 1; 
-       //  int gepValSzam = 3; (tesztelés)
+        int gepValSzam = rnd.nextInt(3) + 1;
+        //  int gepValSzam = 3; (tesztelés)
         String gepValasz = "";
         if (gepValSzam == 1) {
             gepValasz = "kő";
@@ -33,14 +33,14 @@ public class KoPapirOllo {
 
         System.out.println("A gép választása: " + gepValasz);
         System.out.println(jatekosValasz + " a te választásod: ");
-        
+
         if (gepValSzam == jatekosValSzam) {
             System.out.println("Döntetlen!");
         } else if (jatekosValSzam == 1 && gepValSzam == 3) {
             System.out.println("Nyertél!");
         } else if (jatekosValSzam == 2 && gepValSzam == 1) {
             System.out.println("Nyertél!");
-        } else if (jatekosValSzam == 3 && gepValSzam == 2) { 
+        } else if (jatekosValSzam == 3 && gepValSzam == 2) {
             System.out.println("Nyertél!");
         } else {
             System.out.println("Vesztettél!");
