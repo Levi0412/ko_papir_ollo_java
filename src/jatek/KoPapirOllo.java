@@ -34,5 +34,17 @@ public class KoPapirOllo {
 
         System.out.println("A gép választása: " + gepValasztas);
         System.out.println(jatekosValasztas + " a te választásod: ");
+        
+        if (gepValasztasSzam == jatekosValasztasSzam) {
+            System.out.println("Döntetlen!");
+        } else if (jatekosValasztasSzam == 1 && gepValasztasSzam == 3) {
+            System.out.println("Nyertél!");
+        } else if (jatekosValasztasSzam == 2 && gepValasztasSzam == 1) {
+            System.out.println("Nyertél!");
+        } else if (jatekosValasztasSzam == 3 && gepValasztasSzam == 2) { 
+            System.out.println("Nyertél!");
+        } else {
+            System.out.println("Vesztettél!");
+        }
     }
 }
