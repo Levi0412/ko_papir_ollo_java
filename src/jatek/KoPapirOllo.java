@@ -1,20 +1,38 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package jatek;
 
-/**
- *
- * @author hrvth
- */
-public class KoPapirOllo {
+import java.util.Random;
+import java.util.Scanner;
 
-    /**
-     * @param args the command line arguments
-     */
+public class KoPapirOllo {
     public static void main(String[] args) {
-        // TODO code application logic here
+        Random rnd = new Random();
+        Scanner sc = new Scanner(System.in);
+
+
+        int gepValasztasSzam = rnd.nextInt(3) + 1; 
+        String gepValasztas = "";
+        if (gepValasztasSzam == 1) {
+            gepValasztas = "kő";
+        } else if (gepValasztasSzam == 2) {
+            gepValasztas = "papír";
+        } else {
+            gepValasztas = "olló";
+        }
+
+
+        System.out.println("Adj meg egy számot 1-től 3-ig (1: Kő, 2: Papír, 3: Olló): ");
+        int jatekosValasztasSzam = sc.nextInt();
+        String jatekosValasztas = "";
+        if (jatekosValasztasSzam == 1) {
+            jatekosValasztas = "kő";
+        } else if (jatekosValasztasSzam == 2) {
+            jatekosValasztas = "papír";
+        } else if (jatekosValasztasSzam == 3) {
+            jatekosValasztas = "olló";
+        }
+
+
+        System.out.println("A gép választása: " + gepValasztas);
+        System.out.println(jatekosValasztas + " a te választásod: ");
     }
-    
 }
