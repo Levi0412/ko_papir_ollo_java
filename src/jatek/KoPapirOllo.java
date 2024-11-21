@@ -9,39 +9,38 @@ public class KoPapirOllo {
         Scanner sc = new Scanner(System.in);
 
 
-        int gepValasztasSzam = rnd.nextInt(3) + 1; 
-        String gepValasztas = "";
-        if (gepValasztasSzam == 1) {
-            gepValasztas = "kő";
-        } else if (gepValasztasSzam == 2) {
-            gepValasztas = "papír";
+       int gepValSzam = rnd.nextInt(3) + 1; 
+       //  int gepValSzam = 3; (tesztelés)
+        String gepValasz = "";
+        if (gepValSzam == 1) {
+            gepValasz = "kő";
+        } else if (gepValSzam == 2) {
+            gepValasz = "papír";
         } else {
-            gepValasztas = "olló";
+            gepValasz = "olló";
         }
-
 
         System.out.println("Adj meg egy számot 1-től 3-ig (1: Kő, 2: Papír, 3: Olló): ");
-        int jatekosValasztasSzam = sc.nextInt();
-        String jatekosValasztas = "";
-        if (jatekosValasztasSzam == 1) {
-            jatekosValasztas = "kő";
-        } else if (jatekosValasztasSzam == 2) {
-            jatekosValasztas = "papír";
-        } else if (jatekosValasztasSzam == 3) {
-            jatekosValasztas = "olló";
+        int jatekosValSzam = sc.nextInt();
+        String jatekosValasz = "";
+        if (jatekosValSzam == 1) {
+            jatekosValasz = "kő";
+        } else if (jatekosValSzam == 2) {
+            jatekosValasz = "papír";
+        } else if (jatekosValSzam == 3) {
+            jatekosValasz = "olló";
         }
 
-
-        System.out.println("A gép választása: " + gepValasztas);
-        System.out.println(jatekosValasztas + " a te választásod: ");
+        System.out.println("A gép választása: " + gepValasz);
+        System.out.println(jatekosValasz + " a te választásod: ");
         
-        if (gepValasztasSzam == jatekosValasztasSzam) {
+        if (gepValSzam == jatekosValSzam) {
             System.out.println("Döntetlen!");
-        } else if (jatekosValasztasSzam == 1 && gepValasztasSzam == 3) {
+        } else if (jatekosValSzam == 1 && gepValSzam == 3) {
             System.out.println("Nyertél!");
-        } else if (jatekosValasztasSzam == 2 && gepValasztasSzam == 1) {
+        } else if (jatekosValSzam == 2 && gepValSzam == 1) {
             System.out.println("Nyertél!");
-        } else if (jatekosValasztasSzam == 3 && gepValasztasSzam == 2) { 
+        } else if (jatekosValSzam == 3 && gepValSzam == 2) { 
             System.out.println("Nyertél!");
         } else {
             System.out.println("Vesztettél!");
